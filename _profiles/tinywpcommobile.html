@@ -3,7 +3,7 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "TinyWP.in (M)(3G)"
+name: "TinyWP.com (M)(3G)"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
@@ -26,7 +26,7 @@ parameters:
   location: "Dulles:Chrome"
   firstViewOnly: true
   runs: 1
-  url: "https://www.tinywp.in"
+  url: "https://www.tinywp.com"
   emulateMobile: true
 
 #
@@ -41,10 +41,10 @@ parameters:
 budgets:
   -
     metric: TTFB
-    max: 1800
+    max: 800
     alerts: ["emailAlert"]
   -
     metric: firstPaint
-    max: 2400
+    max: 1200
     alerts: ["emailAlert"]
 ---
