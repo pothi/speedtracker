@@ -3,7 +3,7 @@
 # The human-friendly name of the profile. Whenever you're asked for the profile
 # ID, it refers to the name of the profile file — in this case, "default".
 #
-name: "TinyWP.in (M)(3G)"
+name: "TinyWP.com (D)(Cable)"
 
 #
 # The default profile will be the one shown when accessing the root URL of your
@@ -22,12 +22,12 @@ interval: 12
 # WebPageTest test parameters
 #
 parameters:
-  connectivity: "3G"
+  connectivity: "Cable"
   location: "Dulles:Chrome"
   firstViewOnly: true
   runs: 1
-  url: "https://www.tinywp.in"
-  emulateMobile: true
+  url: "https://www.tinywp.com"
+  emulateMobile: false
 
 #
 # Performance budgets are defined with a metric id, a max/min allowed value
@@ -41,10 +41,10 @@ parameters:
 budgets:
   -
     metric: TTFB
-    max: 1800
+    max: 600
     alerts: ["emailAlert"]
   -
     metric: firstPaint
-    max: 2400
+    max: 1200
     alerts: ["emailAlert"]
 ---
