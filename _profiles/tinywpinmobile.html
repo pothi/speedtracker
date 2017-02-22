@@ -16,7 +16,7 @@ default: false
 # with a minimum value of 12, as only two scheduled tests per day are allowed.
 # To disabled repeated tests, simply remove this property from the profile.
 #
-#interval: 12
+interval: 12
 
 #
 # WebPageTest test parameters
@@ -41,10 +41,10 @@ parameters:
 budgets:
   -
     metric: TTFB
-    max: 1200
+    max: 1800
     alerts: ["emailAlert"]
   -
     metric: firstPaint
-    max: 4000
+    max: 2400
     alerts: ["emailAlert"]
 ---
